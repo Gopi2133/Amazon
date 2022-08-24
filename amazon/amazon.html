@@ -16,86 +16,96 @@
 
         </script>  
     </head>
-    <body>
-      <div class="navbar1">
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark" >
-            <div class="container-fluid">
-                <!--logo in navbar-->
-                <div><a class="navbar-brand" href="#">
-                  <img src="logo.png" style="width:50%;" ></div>
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#" style="color:white;font-size:15px;font-family: Arial, Helvetica, sans-serif;margin-right:40px;"><i class="fa fa-map-marker" style="color:rgb(255, 255, 255);font-size:22px;"></i> select your address</a>
-                    </li>
-                      <!--search in navbar-->
-                   <div style="padding-top:10px;margin-right:40px;"><form class="d-flex">
-                    <div class="searchbar" style="width:330px;"><input class="form-control me-2" type="text" placeholder="search" ></div>
-                        <button class="btn btn-warning" type="button"><i class="fa fa-search"></i></button></div>
-                    </form>&nbsp;&nbsp;
-                    <!--india navbar dropdown-->
-                    <div class="dropdown"  style="padding-top:10px;">
-                        <button type="button" class="btn btn-sm btn-dark dropdown-toggle" data-bs-toggle="dropdown"> <img src="flagofnav.png" style="width:25px;" class="rounded"></button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#"><input type="radio" id="lang1" name="language" value="english">
-                            <label for="lang1">english</label><br></a></li>
-                          <li><a class="dropdown-item" href="#"><input type="radio" id="lang2" name="language" value="hindi">
-                            <label for="lang2">Hindi</label><br></a></li>
-                          <li><a class="dropdown-item" href="#"><input type="radio" id="lang3" name="language" value="tamil">
-                            <label for="lang3">Tamil</label><br></a></li>
-                          <li><a class="dropdown-item" href="#"><input type="radio" id="lang4" name="language" value="telugu">
-                            <label for="lang4">Telugu</label><br></a></li>
-                          <li><a class="dropdown-item" href="#"><input type="radio" id="lang5" name="language" value="malayalam">
-                            <label for="lang5">Malayalam</label><br></a></li>
-                        </ul>
-                      </div>&nbsp;&nbsp;
-                      <!--sign in dropdown-->
-                      <div class="dropdown">
-                        <button class="dropbtn" style="color:white;font-size:15px;font-family: Arial, Helvetica, sans-serif;">sign in
-                          <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                          <button type="button" class="btn btn-warning btn-sm d-grid"><p style="font-size:21px;color:black;">sign in securely with your mobile</p></button>
-                          <table class="table table-hover table-borderless" style="font-family: Arial, Helvetica, sans-serif;font-size:12px;">
-                              <tr>
-                                <th>Your list from amzaon</th>
-                                <th>Your account sign in with your mobile number</th>
-                              </tr>
-                              <tr>
-                                <td>Create your wishlist according to your ideas </td>
-                                <td>Your's order in your hand "in just one click"</td>
-                              </tr>
-                              <tr>
-                                <td>Your's wish is your product</td>
-                                <td>Your cart your product is secured</td>
-                              </tr> 
-                          </table>
-                        </div>
+    <body style="overflow:scroll;">
+ <!--nav bar 1-->
+
+ <div class="topnav" id="topper">
+  <nav class="navbar navbar-expand-lg  bg-dark">
+      <div class="container-fluid">
+          <!--logo in navbar-->
+          <div><a class="navbar-brand" href="#">
+              <img src="logo.png" style="width:50%;" ></a></div>
+
+          <!--search in navbar-->
+          <div style="padding-top:1px;"><form class="d-flex">
+              <div class="searchbar" style="width:330px;"><input class="form-control me-2" type="text" placeholder="search" ></div>
+                  <button class="btn btn-warning" type="button"><i class="fa fa-search"></i></button></div>
+              </form>&nbsp;&nbsp;
+         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+              <span><i class="fa-solid fa-bars" style="color:white;font: size 21px;" ></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <div class="navbar-nav">
+
+                  <!--india navbar dropdown-->
+                  <div class="dropdown"  style="padding-top:1px;">
+                      <button type="button" class="btn btn-sm btn-dark dropdown-toggle ms-auto" data-bs-toggle="dropdown"> <img src="flagofnav.png" style="width:25px;" class="rounded"></button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><input type="radio" id="lang1" name="language" value="english">
+                          <label for="lang1">english</label><br></a></li>
+                        <li><a class="dropdown-item" href="#"><input type="radio" id="lang2" name="language" value="hindi">
+                          <label for="lang2">Hindi</label><br></a></li>
+                        <li><a class="dropdown-item" href="#"><input type="radio" id="lang3" name="language" value="tamil">
+                          <label for="lang3">Tamil</label><br></a></li>
+                        <li><a class="dropdown-item" href="#"><input type="radio" id="lang4" name="language" value="telugu">
+                          <label for="lang4">Telugu</label><br></a></li>
+                        <li><a class="dropdown-item" href="#"><input type="radio" id="lang5" name="language" value="malayalam">
+                          <label for="lang5">Malayalam</label><br></a></li>
+                      </ul>
+                    </div>
+
+                    <!--sign in dropdown-->
+
+                    <div class="dropdown " id="signer">
+                      <button class="dropbtn" style="color:rgb(255, 255, 255);font-size:15px;font-family: Arial, Helvetica, sans-serif;">Sign in
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <button type="button" class="btn btn-warning btn-sm d-grid"><p style="font-size:21px;color:black;">sign in securely with your mobile</p></button>
+                        <table class="table table-hover table-borderless" style="font-family: Arial, Helvetica, sans-serif;font-size:12px;">
+                            <tr>
+                              <th>Your list from amzaon</th>
+                              <th>Your account sign in with your mobile number</th>
+                            </tr>
+                            <tr>
+                              <td>Create your wishlist according to your ideas </td>
+                              <td>Your's order in your hand "in just one click"</td>
+                            </tr>
+                            <tr>
+                              <td>Your's wish is your product</td>
+                              <td>Your cart your product is secured</td>
+                            </tr> 
+                        </table>
                       </div>
-                      <li class="nav-item"> <a class="nav-link active" href="#" style="color:white;font-size:16px;font-family: Arial, Helvetica, sans-serif;"><p>return & orders</p></a></li>
-                     <!--cart icon--><a href="#"><i class="fas fa-shopping-cart" style="color:rgb(255, 208, 0);font-size:30px;padding-top:10px;"></i></a>
-                 </a>
-            </div> 
-        </nav> 
-      </div> 
+                    </div>
+                   <!--return active link--> <a href="#" class="nav-item nav-link active " style="color:white;font-size:16px;font-family: Arial, Helvetica, sans-serif;">Return & Orders</a>
+
+                    <!--cart icon--><a href="#" class="nav-item nav-link active "><i class="fas fa-shopping-cart" style="color:rgb(255, 208, 0);font-size:30px;padding-top:1px;overflow-x: auto;"></i></a>
+                  
+          </div>
+      </div>
+  </nav>
+</div>
+
         <!--2nd navbar-->
         <!--<div class="second-navbar">-->
           <div class="bar">
           <nav class="navbar navbar-expand-lg " style ="background-color:rgb(35, 38, 54)">
               <div class="container-fluid">
-                  <a href="#" style="text-decoration:none;color:white;font-size:15px;font-family: Arial, Helvetica, sans-serif;margin-right:12px;">All</a>
-                  <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                  <a href="#" style="text-decoration:none;color:white;font-size:21px;font-family: Arial, Helvetica, sans-serif;margin-right:12px;">All</a>
+                  <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapser">
                       <span ><i class="fa-solid fa-bars" style="color:white;" ></i></span>
                   </button>
-                  <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <div class="collapse navbar-collapse" id="navbarCollapser">
                       <div class="navbar-nav">
-                          <a href="#"  style="text-decoration:none;color:white;font-size:15px;font-family: Arial, Helvetica, sans-serif;margin-right:25px;">Best sellers</a>
-                          <a href="#" style="text-decoration:none;color:white;font-size:15px;font-family: Arial, Helvetica, sans-serif;margin-right:21px;">Today deal's</a>
-                          <a href="#"  style="text-decoration:none;color:white;font-size:15px;font-family: Arial, Helvetica, sans-serif;margin-right:25px;">Mobile</a>
-                          <a href="#"  style="text-decoration:none;color:white;font-size:15px;font-family: Arial, Helvetica, sans-serif;margin-right:25px;">Coustemer service</a>
-                          <a href="#"  style="text-decoration:none;color:white;font-size:15px;font-family: Arial, Helvetica, sans-serif;margin-right:25px;">Books</a>
-                          <a href="#"  style="text-decoration:none;color:white;font-size:15px;font-family: Arial, Helvetica, sans-serif;margin-right:25px;">Electronics</a>
-                          <a href="#"  style="text-decoration:none;color:white;font-size:15px;font-family: Arial, Helvetica, sans-serif;margin-right:25px;">Prime fashion</a>
-                          <a href="#"  style="text-decoration:none;color:white;font-size:15px;font-family: Arial, Helvetica, sans-serif;margin-right:25px;">New release</a>
+                          <a href="#"  style="text-decoration:none;color:white;font-size:18px;font-family: Arial, Helvetica, sans-serif;margin-right:25px;">Best sellers</a>
+                          <a href="#" style="text-decoration:none;color:white;font-size:18px;font-family: Arial, Helvetica, sans-serif;margin-right:25px;">Today deal's</a>
+                          <a href="#"  style="text-decoration:none;color:white;font-size:18px;font-family: Arial, Helvetica, sans-serif;margin-right:25px;">Mobile</a>
+                          <a href="#"  style="text-decoration:none;color:white;font-size:18px;font-family: Arial, Helvetica, sans-serif;margin-right:25px;">Coustemer service</a>
+                          <a href="#"  style="text-decoration:none;color:white;font-size:18px;font-family: Arial, Helvetica, sans-serif;margin-right:25px;">Books</a>
+                          <a href="#"  style="text-decoration:none;color:white;font-size:18px;font-family: Arial, Helvetica, sans-serif;margin-right:25px;">Electronics</a>
+                          <a href="#"  style="text-decoration:none;color:white;font-size:18px;font-family: Arial, Helvetica, sans-serif;margin-right:25px;">Prime fashion</a>
+                          <a href="#"  style="text-decoration:none;color:white;font-size:18px;font-family: Arial, Helvetica, sans-serif;margin-right:25px;">New release</a>
                       </div>
               </div>
           </nav>
@@ -562,12 +572,12 @@
   </div>
   <hr>
    <!--6th body-->
-   <div class="bodyfour"  style="margin-left:25px;">
+   <div class="bodyfour"  style="margin-left:25px; overflow:auto;">
     <h4 class="h4" style="text-align:center;font-family: Arial, Helvetica, sans-serif;">Yours Kitchen</h4>
    <table class="table bordered" width="100%">
     <tr>
       <td>
-       <div class="card" style="width:300px">
+       <div class="card" style="width:275px">
          <div class="card-body">
           <h4 class="card-title" style="text-align:center;font-family: Arial, Helvetica, sans-serif;" >Top Rated | Premium Quality Kitchen utensils</h4>
           <table  class="table table-borderless" width="100%" >
@@ -594,7 +604,7 @@
         </div>
       </td>
     <td>
-      <div class="card" style="width:230px">
+      <div class="card" style="width:205px">
          <div class="card-body">
           <h4 class="card-title" style="text-align:center;font-family: Arial, Helvetica, sans-serif;" >Digital INDIA</h4>
           <table  class="table table-borderless" width="100%" >
@@ -617,8 +627,110 @@
     <hr>
 
     <!--7th body-->
-
-
+    <!--8th sign body-->
+    <p style="text-align:center;font-family: Arial, Helvetica, sans-serif;">see personalized recommendations</p>
+   <div class="d-grid"> <a href="#signer" class="btn btn-warning btn-block">sign in securely</a></div>
+    <p style="font-size:12px;text-align:center;font-family: Arial, Helvetica, sans-serif;">new coustemer care<a href="#signer" style="text-decoration:none;"> sign in</a></p>
+    <hr>
    <!--Footer-->
+   <div class="d-grid"> <a href="#topper" class="btn btn-block" style="background-color:rgb(19, 13, 44);color:rgb(255, 255, 255);font-size:21px;" >Back to top</a></div>
+   <div class="container-fluid "  style="background-color:rgba(13, 5, 46, 0.89)">
+
+    <table class="main table">
+      <tr><td>
+      <table class="subtable1">
+            <tr>
+              <th><a href="#" style="text-decoration:none;color:white;">Get to know us</a></th>
+            </tr>
+            <tr>
+              <td><a href="#"  style="text-decoration:none;color:white;">about us</a></td>
+            </tr>
+            <tr>
+              <td><a href="#"  style="text-decoration:none;color:white;">carrer</a></td>
+      
+            </tr>
+            <tr>
+              <td><a href="#"  style="text-decoration:none;color:white;">Amazon care </a></td>
+            </tr>
+            <tr>
+              <td><a href="#"  style="text-decoration:none;color:white;">Gift sale</a></td>
+            </tr>
+            <tr>
+              <td><a href="#"  style="text-decoration:none;color:white;">Amazon science</a></td>
+            </tr>
+        </table></td>
+      <td>
+        <table class="subtable2">
+          <tr>
+            <th><a href="#" style="text-decoration:none;color:white;">Get to know us</a></th>
+          </tr>
+          <tr>
+            <td><a href="#"  style="text-decoration:none;color:white;">about us</a></td>
+          </tr>
+          <tr>
+            <td><a href="#"  style="text-decoration:none;color:white;">carrer</a></td>
+      
+          </tr>
+          <tr>
+            <td><a href="#"  style="text-decoration:none;color:white;">Amazon care </a></td>
+          </tr>
+          <tr>
+            <td><a href="#"  style="text-decoration:none;color:white;">Gift sale</a></td>
+          </tr>
+          <tr>
+            <td><a href="#"  style="text-decoration:none;color:white;">Amazon science</a></td>
+          </tr>
+      </table></td>
+     <td>
+      <table class="subtable3">
+        <tr>
+          <th><a href="#" style="text-decoration:none;color:white;">Get to know us</a></th>
+        </tr>
+        <tr>
+          <td><a href="#"  style="text-decoration:none;color:white;">about us</a></td>
+        </tr>
+        <tr>
+          <td><a href="#"  style="text-decoration:none;color:white;">carrer</a></td>
+      
+        </tr>
+        <tr>
+          <td><a href="#"  style="text-decoration:none;color:white;">Amazon care </a></td>
+        </tr>
+        <tr>
+          <td><a href="#"  style="text-decoration:none;color:white;">Gift sale</a></td>
+        </tr>
+        <tr>
+          <td><a href="#"  style="text-decoration:none;color:white;">Amazon science</a></td>
+        </tr>
+      </table>
+      </td></tr>
+      </table>
+      <hr>
+    <div class="brand-updates"><table><tr><td><a class="navbar-brand" href="#">
+        <img src="logo.png" class="mx-auto d-block" style="width:50%;" ></a></td>
+       <td><div class="dropdown"  style="padding-top:1px;">
+          <button type="button" class="btn btn-sm btn-dark dropdown-toggle ms-auto" data-bs-toggle="dropdown"> <img src="flagofnav.png" style="width:25px;" class="rounded"></button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"><input type="radio" id="lang1" name="language" value="english">
+              <label for="lang1">english</label><br></a></li>
+            <li><a class="dropdown-item" href="#"><input type="radio" id="lang2" name="language" value="hindi">
+              <label for="lang2">Hindi</label><br></a></li>
+            <li><a class="dropdown-item" href="#"><input type="radio" id="lang3" name="language" value="tamil">
+              <label for="lang3">Tamil</label><br></a></li>
+            <li><a class="dropdown-item" href="#"><input type="radio" id="lang4" name="language" value="telugu">
+              <label for="lang4">Telugu</label><br></a></li>
+            <li><a class="dropdown-item" href="#"><input type="radio" id="lang5" name="language" value="malayalam">
+              <label for="lang5">Malayalam</label><br></a></li>
+          </ul>
+        </div>
+      </td></tr></table>
+      </div>
+      <div class="container-fluid" id="contact">
+        <footer style="background-color:black;text-align:center;">
+            <br><p style="font-size:25px;font-family:Segoe UI;color:white;">Find Us On</p>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook" style=" color:white;font-size:35px;padding-left:8px;"></i></a><a href="https://www.instagram.com/?hl=en"target="_blank"><i class="fab fa-instagram" style=" color:white;font-size:35px;padding-left:8px;"></i></a><a href="https://www.youtube.com/watch?v=oYRda7UtuhA"target="_blank"><i class="fab fa-youtube" style=" color:white;font-size:35px;padding-left:8px;"></i></a><a href="https://twitter.com/i/flow/login"target="_blank"><i class="fab fa-twitter" style=" color:white;font-size:35px;padding-left:8px;"></i></a><br>
+            <br><p style="font-size:19px;font-family:Segoe UI;color:white;">Powered by<a href="https://oceanacademy.co.in/" target="_blank"style="text-decoration:none;color:white;font-size:15px;font-family:Segoe UI;"> Ocean Academy</a></p>
+       <br></footer> </div> 
+   </div>
     </body>
 </html>
